@@ -8,7 +8,7 @@ def traduzir(textos, idioma):
 
     traducao = tradutor.translate(texto)
 
-    print("Seu texto traduzido: ", traducao)
+    return "Seu texto traduzido: ", traducao
 
 st.set_page_config(page_title="Tradutor Simples", layout="centered")
 
@@ -27,4 +27,5 @@ if st.button("Traduzir"):
         st.subheader("🔎 Tradução:")
         st.success(trad)
     else:
+
         st.warning("Digite um texto para traduzir.")
