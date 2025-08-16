@@ -29,3 +29,4 @@ if st.button("Traduzir"):
     else:
 
         st.warning("Digite um texto para traduzir.")
+
