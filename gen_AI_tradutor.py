@@ -2,7 +2,7 @@ from translate import Translator
 import streamlit as st
 
 def traduzir(textos, idioma):
-    tradutor = Translator(to_lang=idioma, from_lang='pt')
+    tradutor = Translator(to_lang=idioma, from_lang='pt-br')
 
     texto = textos
 
@@ -29,4 +29,5 @@ if st.button("Traduzir"):
     else:
 
         st.warning("Digite um texto para traduzir.")
+
 
